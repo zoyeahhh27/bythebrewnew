@@ -199,7 +199,7 @@ function App() {
     };
 
     try {
-      const response = await fetch("http://localhost:5001/api/orders", {
+      const response = await fetch("https://bythebrew-ppfi.onrender.com/api/orders", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -245,7 +245,7 @@ function App() {
   useEffect(() => {
     const loadMoments = async () => {
       try {
-        const response = await fetch("http://localhost:5001/api/moments");
+        const response = await fetch("https://bythebrew-ppfi.onrender.com/api/moments");
         const data = await response.json();
 
         if (!response.ok) {
@@ -278,7 +278,7 @@ function App() {
     };
 
     try {
-      const response = await fetch("http://localhost:5001/api/moments", {
+      const response = await fetch("https://bythebrew-ppfi.onrender.com/api/moments", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
