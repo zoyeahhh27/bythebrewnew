@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import "./AdminDashboard.css";
-
-const API_URL = "http://localhost:5001";
+const API_URL = "https://bythebrew-ppfi.onrender.com";
 
 function AdminDashboard() {
   const [token, setToken] = useState(
